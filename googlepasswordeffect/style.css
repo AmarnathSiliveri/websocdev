@@ -1,0 +1,52 @@
+body {
+  margin: 120px;
+}
+
+form {
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+
+}
+
+input {
+  width: 100%; /* Adjusted to fit form width */
+  height: 50px;
+  background: transparent;
+  border: 1px solid #ccc;
+  transition: all .3s ease;
+  padding:0 15px; /* Corrected padding value */
+ 
+
+}
+
+label {
+  position: absolute; /* Corrected typo */
+  cursor: text;
+  z-index: 2;
+  top: 15px;
+  left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 0 10px; /* Adjusted padding for better appearance */
+  color: #999;
+  transition: all .3s ease;
+  pointer-events: none; /* Prevent label from blocking input */
+}
+
+input:focus + label,
+input:valid + label {
+  font-size: 11px;
+  top: -5px; /* Adjusted position for better visibility */
+}
+
+input:focus {
+  border-color: blue; /* Change border color on focus */
+ outline: 1px solid blue;
+}
+
+input:focus + label {
+  color: blue;
+
+}
